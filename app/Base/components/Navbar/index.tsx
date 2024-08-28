@@ -233,6 +233,12 @@ function Navbar(props: Props) {
                         )}
                     </div>
                 )}
+                <SmartButtonLikeLink
+                    route={routes.donations}
+                    variant="general"
+                >
+                    {strings.donationsButtonLabel}
+                </SmartButtonLikeLink>
                 <SelectInput
                     nonClearable
                     variant="general"
