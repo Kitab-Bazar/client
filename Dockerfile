@@ -8,6 +8,8 @@ RUN apt-get update -y \
 
 WORKDIR /code
 
+RUN git config --global --add safe.directory /code
+
 FROM base AS full-client
 
 COPY ./package.json ./yarn.lock /code/

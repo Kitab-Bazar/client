@@ -33,6 +33,15 @@ const login = wrap({
     },
     visibility: 'is-not-authenticated',
 });
+const donations = wrap({
+    path: '/donations/',
+    title: `${title} - Donations`,
+    navbarVisibility: true,
+    component: lazy(() => import('#views/Donations')),
+    componentProps: {
+    },
+    visibility: 'is-anything',
+});
 const forgotPassword = wrap({
     path: '/forgot-password/',
     title: `${title} - Forgot Password`,
@@ -140,6 +149,7 @@ const eBook = wrap({
 const routes = {
     register,
     login,
+    donations,
     home,
     myProfile,
     wishList,

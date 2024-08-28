@@ -1,0 +1,73 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--dui-spacing-extra-large);
+
+    .page-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: var(--kitab-page-max-width);
+        gap: var(--dui-spacing-medium);
+
+        * {
+            overflow: unset;
+        }
+
+        .donations-text {
+            background-color: unset;
+            padding: var(--dui-spacing-large);
+        }
+
+        .donate-cards {
+            display: grid;
+            grid-gap: var(--dui-spacing-large);
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            padding: var(--dui-spacing-large);
+            width: 100%;
+
+            .donate-item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-end;
+                gap: var(--dui-spacing-large);
+                border: var(--dui-width-separator-thin) solid var(--dui-color-separator);
+                border-radius: var(--kitab-radius-border);
+                background-color: var(--dui-color-foreground);
+                padding: var(--dui-spacing-large);
+                min-width: 15rem;
+                height: 18rem;
+
+                .icon {
+                    width: 5rem;
+                    height: 5rem;
+                    object-fit: contain;
+                }
+
+                .description {
+                    text-align: center;
+                    color: var(--dui-color-label);
+                    font-size: var(--dui-font-size-medium);
+                }
+
+                .end-wrapper {
+                    display: flex;
+                    align-items: flex-end;
+                    flex-grow: 1;
+
+                    .button {
+                        justify-self: flex-end;
+                    }
+                }
+            }
+
+            @media (max-width: 435px) {
+                .donate-item {
+                    min-width: 13rem;
+                }
+            }
+        }
+    }
+}

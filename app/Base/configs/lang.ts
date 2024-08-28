@@ -72,6 +72,10 @@ export const navbar = {
         en: 'Search all books',
         ne: 'किताब खोज्नुहोस्',
     },
+    donationsButtonLabel: {
+        en: 'Donations',
+        ne: 'योगदान',
+    },
     signUpButtonLabel: {
         en: 'Register',
         ne: 'दर्ता',
@@ -115,6 +119,57 @@ export const navbar = {
     cancelLabel: {
         en: 'Cancel',
         ne: 'रद्द गर्नुहोस्',
+    },
+};
+
+export const donations = {
+    donationsHeading: {
+        en: 'Donations',
+        ne: 'योगदान',
+    },
+    donationsDescription1: {
+        en: 'At Kitab Bazar, we believe in the power of early reading to shape young minds. Driven by the importance of early literacy and aligned with the government-mandated PMEC standard, we are dedicated to ensuring that every grade in schools has book corners filled with enriching supplementary materials.',
+        ne: 'किताब बजारमा, हामी युवा दिमागलाई आकार दिन प्रारम्भिक पढाइको शक्तिमा विश्वास गर्छौं। प्रारम्भिक साक्षरताको महत्त्वबाट सञ्चालित र सरकारले-अनिवार्य PMEC मापदण्डसँग पङ्क्तिबद्ध, हामी विद्यालयहरूमा प्रत्येक कक्षामा पूरक सामग्रीहरूले भरिएको पुस्तक कुनाहरू छन् भनी सुनिश्चित गर्न समर्पित छौं।',
+    },
+    donationsDescription2: {
+        en: 'With your donation, Kitab Bazar can ensure that every school, even in remote areas, has book corners filled with stories, poems, and songs that inspire a love for reading. Your contribution fuels the future of young minds.',
+        ne: 'तपाईंको दानले, किताब बजारले दुर्गम क्षेत्रहरूमा समेत प्रत्येक विद्यालयमा कथा, कविता र गीतहरूले भरिएको पुस्तक कुनाहरू छन् भनी सुनिश्चित गर्न सक्छ जसले पढ्नको लागि प्रेमलाई प्रेरित गर्दछ। तपाईंको योगदानले युवा दिमागको भविष्यलाई इन्धन गर्छ ।',
+    },
+    donationsDescription3: {
+        en: 'Thank you for your generosity!',
+        ne: 'तपाईंको उदारता को लागी धन्यवाद!',
+    },
+    donateMoneyHeading: {
+        en: 'Donate',
+        ne: 'योगदान',
+    },
+    donateMoneyDescription: {
+        en: 'To make the donation, please follow this link.',
+        ne: 'दान गर्न, कृपया यो लिङ्क पछ्याउनुहोस्।',
+    },
+    donateSecondHandBooksHeading: {
+        en: 'Donate Second Hand Books',
+        ne: 'दोस्रो हात पुस्तकहरू दान गर्नुहोस्',
+    },
+    donateSecondHandBooksDescription: {
+        en: 'Please fill the form below to donate second hand books.',
+        ne: 'सेकेन्ड ह्यान्ड पुस्तकहरू दान गर्न कृपया तलको फारम भर्नुहोस्।',
+    },
+    donateBooksFromWebsiteHeading: {
+        en: 'Donate Books from Website',
+        ne: 'वेबसाइटबाट पुस्तकहरू दान गर्नुहोस्',
+    },
+    donateBooksFromWebsiteDescription: {
+        en: 'Follow the general book purchasing process and contact us for further confirmation',
+        ne: 'सामान्य पुस्तक खरिद प्रक्रिया पछ्याउनुहोस् र थप पुष्टिको लागि हामीलाई सम्पर्क गर्नुहोस्',
+    },
+    linkToTheFormButtonLabel: {
+        en: 'Link to the Form',
+        ne: 'फारमको लिङ्क',
+    },
+    contactUsAt: {
+        en: 'Contact us at: +977 9762416156',
+        ne: 'हामीलाई सम्पर्क गर्नुहोस्: +977 9762416156',
     },
 };
 
