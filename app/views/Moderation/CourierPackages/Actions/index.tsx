@@ -10,6 +10,7 @@ import RelatedOrdersModal from '#components/RelatedOrdersModal';
 import { CourierPackage } from '../index';
 import UpdatePackageModal from './UpdatePackageModal';
 import RelatedBooksModal from './RelatedBooksModal';
+import SchoolPackagesModal from './SchoolPackagesModal';
 import styles from './styles.css';
 
 export interface Props {
@@ -39,6 +40,11 @@ function Actions(props: Props) {
         viewRelatedBooksModalShown,
         showRelatedBooksModal,
         hideRelatedBooksModal,
+    ] = useModalState(false);
+    const [
+        viewSchoolPackagesModalShown,
+        showSchoolPackagesModal,
+        hideSchoolPackagesModal,
     ] = useModalState(false);
 
     return (
@@ -73,6 +79,16 @@ function Actions(props: Props) {
             >
                 Books
             </Button>
+            <Button
+                className={styles.button}
+                name={undefined}
+                title="View school packages"
+                onClick={showSchoolPackagesModal}
+                disabled={disabled}
+                variant="tertiary"
+            >
+                Schools
+            </Button>
             {updatePackageModalShown && (
                 <UpdatePackageModal
                     courierPackage={data}
@@ -89,6 +105,12 @@ function Actions(props: Props) {
                 <RelatedBooksModal
                     courierPackage={data}
                     onModalClose={hideRelatedBooksModal}
+                />
+            )}
+            {viewSchoolPackagesModalShown && (
+                <SchoolPackagesModal
+                    schoolPackage={data}
+                    onModalClose={hideSchoolPackagesModal}
                 />
             )}
         </div>

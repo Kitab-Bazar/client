@@ -1,3 +1,4 @@
 .button {
+    align-items: flex-start;
     flex-shrink: 0;
 }

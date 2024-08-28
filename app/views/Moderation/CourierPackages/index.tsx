@@ -149,7 +149,7 @@ function CourierPackages(props: Props) {
                 data,
                 disabled: courierPackagesLoading,
             }),
-            columnWidth: 350,
+            columnWidth: 470,
         };
 
         return [
@@ -157,7 +157,7 @@ function CourierPackages(props: Props) {
                 'id',
                 'ID',
                 (item) => item.id,
-                { columnWidth: 50 },
+                { columnWidth: 70 },
             ),
             createStringColumn<CourierPackage, string>(
                 'packageId',
